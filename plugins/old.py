@@ -31,7 +31,7 @@ async def old(client, message):
         message_id=message.message_id,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton('👥 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗚𝗥𝗢𝗨𝗣 👥', url='https://t.me/MaxxBotChat')],
+                [InlineKeyboardButton('👥 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗚𝗥𝗢𝗨𝗣 👥', url='https://t.me/joinchat/AAAAAEq06rVTky8e9b4x8w')],
             ]  
         )
     )
