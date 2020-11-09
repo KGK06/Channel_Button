@@ -42,7 +42,7 @@ async def help(bot, update):
 async def test(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.test_MSG,
+        text=Translation.TEST_MSG,
         reply_markup=InlineKeyboardMarkup(
        [
          [
