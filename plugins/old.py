@@ -38,6 +38,27 @@ async def help(bot, update):
     )
 
 
+@pyrogram.Client.on_message(pyrogram.Filters.command(["test"]))
+async def test(bot, update):
+    await bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.test_MSG,
+        reply_markup=InlineKeyboardMarkup(
+       [
+         [
+         InlineKeyboardButton('📍SUPPORT CHANNEL📍', url='https://t.me/MaxxBots'),
+         InlineKeyboardButton('✍️FEEDBACK✍️', url='https://t.me/MaxxWizard_Bot')
+         ],
+         [
+         InlineKeyboardButton('👤LEECH GROUP👤', url='https://t.me/MaxxLeechPro'),
+         InlineKeyboardButton('🗣️HELP GROUP🗣️', url='https://t.me/MaxxBotChat')
+         ]
+       ]
+      )
+    )
+    return
+
+
 @pyrogram.Client.on_message(pyrogram.Filters.document | Filters.video)
 async def old(client, message):
     await client.edit_message_reply_markup(
