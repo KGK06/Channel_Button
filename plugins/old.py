@@ -59,7 +59,7 @@ async def test(bot, update):
     return
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.document | Filters.video | Filters.image)
+@pyrogram.Client.on_message(pyrogram.Filters.document | Filters.video | Filters.message)
 async def old(client, message):
     await client.edit_message_reply_markup(
         chat_id=message.chat.id,
