@@ -38,6 +38,23 @@ async def help(bot, update):
     )
 
 
+@pyrogram.Client.on_message(pyrogram.Filters.video)
+async def old(client, message):
+    await client.edit_message_reply_markup(
+        chat_id=message.chat.id,
+        message_id=message.message_id,
+        reply_markup=InlineKeyboardMarkup(
+            [
+            [InlineKeyboardButton('👥 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗚𝗥𝗢𝗨𝗣 👥', url='https://t.me/joinchat/R02KIFkSJaW9vyyGZmhHiQ')],
+            [InlineKeyboardButton('👲 𝗟𝗘𝗘𝗖𝗛 𝗚𝗥𝗢𝗨𝗣 👲 ', url='https://t.me/joinchat/AAAAAFarWaHcm9oVv-OyAA')]
+            ]  
+        )
+    )
+    
+  
+        
+    
+                          
 @pyrogram.Client.on_message(pyrogram.Filters.document)
 async def old(client, message):
     await client.edit_message_reply_markup(
