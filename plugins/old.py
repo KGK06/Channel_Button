@@ -47,7 +47,7 @@ async def test(bot, update):
        [
          [
          InlineKeyboardButton('📍SUPPORT CHANNEL📍', url='https://t.me/MaxxBots'),
-         InlineKeyboardButton('✍️FEEDBACK✍️', url='https://t.me/MaxxWizard_Bot')
+         InlineKeyboardButton('👲 FEEDBACK 👲', url='https://t.me/MaxxWizard_Bot')
          ],
          [
          InlineKeyboardButton('👤LEECH GROUP👤', url='https://t.me/MaxxLeechPro'),
