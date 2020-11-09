@@ -3,3 +3,4 @@ class Translation(object):
     HELP_MSG = """<b>Nobody's Gonna Help You Nigga 😂</b>"""
     CH_LIST = """<b>empty</b>"""  
     ABOUT_MSG = """I don't know 🤷"""
+    TEST_MSG = """`TESTING`"""
