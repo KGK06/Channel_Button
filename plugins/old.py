@@ -38,7 +38,7 @@ async def help(bot, update):
     )
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.video)
+@pyrogram.Client.on_message(pyrogram.Filters.document | Filters.video)
 async def old(client, message):
     await client.edit_message_reply_markup(
         chat_id=message.chat.id,
